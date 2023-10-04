@@ -1,8 +1,5 @@
-<?php include_once 'main.php';
-    
-    $id = $_REQUEST['https://http://boss-trackers.uz/32'];
-
-    echo "<script>alert('{$id}')</script>"
+<?php
+    include_once 'main.php';
 ?>
 <!DOCTYPE html>
 <html lang="<?if($_SESSION['lang']=='uz'){echo "uz";}?><?if($_SESSION['lang']=='ru'){echo "ru";}?>">
@@ -23,9 +20,6 @@
       <div class="container-fluid">
          <div class="header">
             <div class="row">
-
-                
-
                <div class="col-12 d-flex d-lg-none d-md-none py-2">
                   <a class="btn btn-dark ms-auto me-3" onclick="changelang('uz')">
                   <img src="img/uzb.png" style="width: 24px;height: 24px;" class="rounded-circle" alt="Uzb Flag"> 
@@ -53,55 +47,6 @@
                         <li><a class="dropdown-item" onclick="changelang('ru')">Ru</a></li>
                      </ul>
                   </div>
-                 <div class="">
-                  <button type="button" class="btn btn-danger py-3 px-4" data-toggle="modal" data-target="#exampleModalCenter">
-                  Login
-                  </button>
-                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                     <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                           <div class="modal-header">
-                              <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true" class="ion-ios-close"></span>
-                              </button>
-                           </div>
-                           <div class="modal-body p-4 p-md-5">
-                              <div class="icon text-danger d-flex align-items-center justify-content-center">
-                                 <span class="ion-ios-person"></span>
-                              </div>
-                              <h3 class="text-center mb-4">Sign In</h3>
-                              <form action="./api/api.php" method="POST" class="login-form">
-                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control rounded-left" 
-                                    placeholder="<? if($_SESSION['lang']=='uz')  echo 'fio'; else  echo'фио';?>">
-                                 </div>
-                                 <div class="form-group d-flex">
-                                    <input type="text" name="number" class="form-control rounded-left" placeholder="+998 9- --- -- --" id="number">
-                                 </div>
-                                 <div class="form-group">
-                                    <button type="submit" class="form-control btn btn-danger rounded submit px-3">Login</button>
-                                 </div>
-                                 <div class="form-group d-md-flex">
-                                    <div class="form-check w-50">
-                                       <label class="custom-control fill-checkbox">
-                                       <input type="checkbox" class="fill-control-input">
-                                       <span class="fill-control-indicator"></span>
-                                       <span class="fill-control-description text-danger" >Remember Me</span>
-                                       </label>
-                                    </div>
-                                    <div class="w-50 text-md-right">
-                                       <a href="#" class="text-danger">Forgot Password</a>
-                                    </div>
-                                 </div>
-                              </form>
-                           </div>
-                           <div class="modal-footer justify-content-center">
-                              <p>Not a member? <a href="#" class="text-danger">Create an account</a></p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
                </div>
             </div>
          </div>
@@ -130,7 +75,7 @@
                   <div class="header__footer">
                      <div class="header__foot">
                         <img src="img/iconpar.jpg" alt="">
-                        <button onclick="linkp()" class="btn btn-light shadow-lg"><i class="fa-brands fa-android"></i>
+                        <button class="btn btn-light shadow-lg" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa-brands fa-android"></i>
                         <?
                            if($_SESSION['lang']=='ru'){
                                ?>
@@ -584,20 +529,56 @@
             </div>
          </div>
       </div>
-      <script src="js/jquery-3.7.0.js"></script>
+
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true" class="ion-ios-close"></span>
+                      </button>
+                  </div>
+                  <div class="modal-body p-4 p-md-5">
+                      <div class="icon text-danger d-flex align-items-center justify-content-center">
+                          <span class="ion-ios-person"></span>
+                      </div>
+                      <h3 class="text-center mb-4">Sign In</h3>
+                      <form id="login-form" class="login-form">
+                          <div class="form-group">
+                              <input type="text" name="name" class="form-control rounded-left"
+                                     placeholder="<? if($_SESSION['lang']=='uz')  echo 'FIO'; else  echo'фио';?>">
+                          </div>
+                          <div class="form-group d-flex">
+                              <input type="text" name="number" class="form-control rounded-left" placeholder="+998 9- --- -- --" id="number">
+                          </div>
+                          <div class="form-group">
+                              <button type="submit" class="form-control btn btn-success rounded submit px-3" id="login-send">Yuborish</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+      <script src="js/main.js"></script>
       <script src="js/imask.min.js"></script>
+
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+
       <script>
          window.replainSettings = { id: '06e5f6d6-8e05-47a3-a09a-0d0db5375703' };
          (function(u){var s=document.createElement('script');s.async=true;s.src=u;
          var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
          })('https://widget.replain.cc/dist/client.js');
       </script>
+
       <script type="text/javascript">
-         function linkp() {
-             window.location.href = 'https://app.bosstracker.uz/download/rftrack?a=A19';
-         }
+
          function linkch() {
              window.location.href = 'https://bosstracker.uz/bosstracker-child.apk';
          }        
@@ -613,7 +594,7 @@
                  },
                  success:function(data,status) {
                      // console.log(data,status);
-                     if(status=="success"){
+                     if(status==="success"){
                          location.reload();
                      }
                      else{
@@ -633,7 +614,6 @@
           };
          const mask = IMask(element, maskOptions);
       </script>
-      <script src="styles/js/jquery.min.js"></script>
       <script src="styles/js/popper.js"></script>
       <script src="styles/js/bootstrap.min.js"></script>
       <script src="styles/js/main.js"></script>
