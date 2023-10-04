@@ -1,0 +1,410 @@
+@import url("../styles/style.scss");
+@media only screen and (max-width: 1199.98px) and (min-width: 992px) {
+  .container-fluid {
+    width: 100%;
+  }
+  .container-fluid > .header {
+    width: 100%;
+  }
+  .container-fluid > .header > .row {
+    max-width: 1200px;
+  }
+  .container-fluid > .main > .header__wrapper > .header__main > .header__banner > button {
+    padding: 10px 12px;
+    font-size: 1.4rem;
+  }
+  .container-fluid > .section > .section__main > .section__one > h1 {
+    font-size: 1.6rem;
+  }
+  .container-fluid > .section > .section__main > .section__one > .sec__main > .section__menu > p {
+    width: 80%;
+    font-weight: 200;
+    font-size: 0.9rem;
+  }
+  .container-fluid > .section > .section__main > .section__two > img {
+    width: 450px;
+  }
+  .container-fluid > .section__slayd > .carousel > .carousel-inner > .carousel-item > .flex-center > .carousel-caption > p {
+    width: 85%;
+    margin: auto;
+    font-size: 1.4rem;
+  }
+  .container-fluid > .section__foot > .sec__footCard {
+    width: 92%;
+    padding: 50px 0;
+  }
+  .container-fluid > .section__foot > .sec__footCard > h1 {
+    font-size: 2rem;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .sec__card {
+    margin-top: 40px;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .sec__card > .card {
+    width: 200px;
+    height: 200px;
+    padding: 0px 0px 0px 20px;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .sec__card > .card > h2 {
+    margin-left: 15px;
+    font-size: 1.7rem !important;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .sec__card > .card > p {
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .sec__card > .card > h3 {
+    margin-left: 15px;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .section__footText {
+    border-top: 2px solid #3F3F3D;
+    margin-top: 60px;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .section__footText > h1 {
+    font-size: 1.8rem;
+    margin-top: 25px;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .section__footText > h2 {
+    font-size: 1.7rem;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .section__footText > h3 {
+    font-size: 1.3rem;
+  }
+  .container-fluid > .footer {
+    width: 100%;
+  }
+  .container-fluid > .footer > .foot__text {
+    font-size: 0.9rem;
+  }
+  .container-fluid > .footer > .link a {
+    font-size: 0.9rem;
+  }
+  .container-fluid > .footer > .link > .fa-brands {
+    margin-left: 2px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .container-fluid {
+    width: 100%;
+  }
+  .container-fluid > .main > .header__wrapper > .header__main {
+    padding-bottom: 60px;
+  }
+  .container-fluid > .main > .header__wrapper > .header__main > .header__banner > button {
+    font-size: 1rem;
+    padding: 15px 15px;
+  }
+  .container-fluid > .main > .header__wrapper > .header__video {
+    padding-bottom: 60px;
+  }
+  .container-fluid > .main > .header__wrapper > .header__video > video {
+    width: 300px;
+  }
+  .container-fluid > .section > .section__main > .section__one > h1 {
+    margin: 0 25px;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .container-fluid > .section > .section__main > .section__one > .sec__main {
+    margin-left: 25px;
+  }
+  .container-fluid > .section > .section__main > .section__one > .sec__main > .section__menu > p {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+  .container-fluid > .section > .section__main > .section__two > img {
+    width: 360px;
+  }
+  .container-fluid > .section__foot > .sec__footCard {
+    padding: 60px 0;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .sec__card > .card {
+    margin-bottom: 35px;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .section__footText {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+  .container-fluid {
+    width: 100%;
+  }
+  .container-fluid > .header {
+    width: 100%;
+  }
+  .container-fluid > .header > .row > .col-6 > button {
+    font-size: 0.8rem;
+  }
+  .container-fluid > .header > .row > .col-6 > button > h1 {
+    font-size: 0.8rem;
+  }
+  .container-fluid > .main > .header__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .container-fluid > .main > .header__wrapper > .header__main {
+    padding-bottom: 50px;
+  }
+  .container-fluid > .main > .header__wrapper > .header__main > .header__banner > button {
+    padding: 12px 15px;
+    font-size: 1.2rem;
+    margin-top: 25px;
+  }
+  .container-fluid > .main > .header__wrapper > .header__main > .header__footer {
+    display: flex;
+    justify-content: center;
+  }
+  .container-fluid > .main > .header__wrapper > .header__video {
+    padding-bottom: 40px;
+  }
+  .container-fluid > .section > .section__main > .section__one {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .container-fluid > .section > .section__main > .section__one > .sec__main {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-fluid > .section > .section__main > .section__one > .sec__main > .section__menu {
+    width: 70%;
+  }
+  .container-fluid > .section > .section__main > .section__one > .sec__main > .section__menu > p {
+    font-size: 0.9rem;
+    font-weight: 100;
+    width: 80%;
+  }
+  .container-fluid > .section > .section__main > .section__two {
+    display: none;
+  }
+  .container-fluid > .section__foot > .sec__footCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .sec__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .sec__card > .card {
+    margin: 20px 0;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .sec__card > .card__active {
+    margin: 20px 0;
+  }
+}
+@media only screen and (max-width: 499.98px) {
+  .container-fluid {
+    width: 100%;
+  }
+  .container-fluid > .header {
+    width: 100%;
+  }
+  .container-fluid > .header > .row {
+    width: 98%;
+  }
+  .container-fluid > .header > .row > .col-6 {
+    padding: 0;
+  }
+  .container-fluid > .header > .row > .col-6 > button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+  .container-fluid > .header > .row > .col-6 > button > h1 {
+    font-size: 0.9rem;
+  }
+  .container-fluid > .main {
+    width: 100%;
+  }
+  .container-fluid > .main > .header__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-fluid > .main > .header__wrapper > .header__main {
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-fluid > .main > .header__wrapper > .header__main > .header__banner > button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin-top: 50px;
+  }
+  .container-fluid > .main > .header__wrapper > .header__video {
+    padding-bottom: 15px;
+  }
+  .container-fluid > .section > .section__main > .section__one {
+    width: 100%;
+  }
+  .container-fluid > .section > .section__main > .section__one > h1 {
+    font-size: 1.4rem;
+    margin-left: 0;
+    margin-top: 10px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .container-fluid > .section > .section__main > .section__one > .sec__main {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-fluid > .section > .section__main > .section__one > .sec__main > .section__menu {
+    width: 70%;
+  }
+  .container-fluid > .section > .section__main > .section__one > .sec__main > .section__menu > h2 {
+    font-size: 1.2rem;
+  }
+  .container-fluid > .section > .section__main > .section__one > .sec__main > .section__menu > p {
+    width: 90%;
+    font-size: 0.8rem;
+  }
+  .container-fluid > .section > .section__main > .section__two {
+    display: none;
+  }
+  .container-fluid > .section__slayd > .carousel {
+    height: 500px;
+    padding: 30px 0;
+  }
+  .container-fluid > .section__slayd > .carousel > .carousel-inner > .carousel-item > .flex-center > .carousel-caption > p {
+    font-size: 1.2rem;
+  }
+  .container-fluid > .section__slayd > .carousel .del_but {
+    display: none;
+  }
+  .container-fluid > .section__foot > .sec__footCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .sec__card {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .sec__card > .card {
+    margin: 20px 0;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .sec__card > .card__active {
+    margin: 20px 0;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .section__footText {
+    margin: 25px 0;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .section__footText > h1 {
+    font-size: 1.5rem;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .section__footText > h2 {
+    font-size: 1.3rem;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .section__footText > h3 {
+    font-size: 1rem;
+  }
+  .container-fluid > .footer {
+    justify-content: space-evenly;
+  }
+  .container-fluid > .footer > .link {
+    display: flex;
+    align-items: center;
+  }
+  .container-fluid > .footer > .link > a {
+    margin-right: 25px;
+    font-size: 1rem;
+  }
+  .container-fluid > .footer > .foot__text > p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container-fluid {
+    width: 100%;
+  }
+  .container-fluid > .header {
+    width: 100%;
+  }
+  .container-fluid > .header > .row > .col-6 > .logo {
+    width: 80px;
+    padding: 8px;
+  }
+  .container-fluid > .header > .row > .col-6 > button {
+    padding: 7px 8px;
+  }
+  .container-fluid > .header > .row > .col-6 > button > i {
+    font-size: 0.6rem;
+  }
+  .container-fluid > .header > .row > .col-6 > button > h1 {
+    font-size: 0.6rem;
+  }
+  .container-fluid > .main > .header__bannerIcon1 {
+    display: none;
+  }
+  .container-fluid > .main > .header__wrapper > .header__main > .header__banner > button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  .container-fluid > .main > .header__wrapper > .header__main > .header__footer > .header__foot > p {
+    text-align: center;
+  }
+  .container-fluid > .main > .header__wrapper > .header__main > .header__footer > .header__foot > button > i {
+    display: none;
+  }
+  .container-fluid > .main > .header__wrapper > .header__video > video {
+    width: 250px;
+  }
+  .container-fluid > .section > .section__main > .section__one > .sec__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-fluid > .section > .section__main > .section__one > .sec__main > .section__menu {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .container-fluid > .section > .section__main > .section__one > .sec__main > .section__menu > p {
+    margin-top: 8px;
+  }
+  .container-fluid > .section__slayd > .carousel {
+    padding: 15px 0;
+  }
+  .container-fluid > .section__slayd > .carousel > .carousel-inner > .carousel-item > .flex-center > img {
+    width: 200px;
+  }
+  .container-fluid > .section__slayd > .carousel > .carousel-inner > .carousel-item > .flex-center > .carousel-caption {
+    padding: 0;
+  }
+  .container-fluid > .section__foot > .sec__footCard > h1 {
+    font-size: 1.4rem;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .sec__card > .card {
+    height: 160px;
+    padding: 10px 10px 10px 25px;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .sec__card > .card > h2 {
+    font-size: 1.4rem !important;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .section__footText {
+    text-align: center;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .section__footText > h1 {
+    font-size: 1.2rem;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .section__footText > h2 {
+    font-size: 1rem;
+  }
+  .container-fluid > .section__foot > .sec__footCard > .section__footText > h3 {
+    font-size: 0.8rem;
+  }
+  .container-fluid > .footer > .foot__text > p {
+    font-size: 0.8rem;
+  }
+  .container-fluid > .footer > .link > a {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=responsive.css.map */

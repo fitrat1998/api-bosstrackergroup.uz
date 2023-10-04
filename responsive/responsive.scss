@@ -1,0 +1,595 @@
+@import url("../styles/style.scss");
+
+@media only screen and (max-width: 1199.98px) and (min-width: 992px){
+    .container-fluid {
+        width: 100%;
+
+        & > .header {
+            width: 100%;
+            & > .row {
+                max-width: 1200px;
+            }
+        }
+        & > .main {
+            & > .header__wrapper {
+                & > .header__main {
+                    & > .header__banner {
+                        & > button {
+                            padding: 10px 12px;
+                            font-size: 1.4rem ;
+                        }
+                    }
+                }
+            }
+        }
+        & > .section {
+            & > .section__main {
+                & > .section__one {
+                    & > h1 {
+                        font-size: 1.6rem;
+                    }
+                    & > .sec__main {
+                        & > .section__menu {
+                            & > p {
+                                width: 80%;
+                                font-weight: 200;
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                }
+                & > .section__two {
+                    & > img {
+                        width: 450px;
+                    }
+                }
+            }
+        }
+        & > .section__slayd{
+            & > .carousel {
+                & > .carousel-inner {
+                    & > .carousel-item {
+                        & > .flex-center {
+                            & > .carousel-caption {
+                                & > p {
+                                    width: 85%;
+                                    margin: auto;
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & > .section__foot {
+            & > .sec__footCard {
+                width: 92%;
+                padding: 50px 0;
+                
+                & > h1 {
+                    font-size: 2rem;
+                }
+                & > .sec__card {
+                    margin-top: 40px;
+
+                    & > .card {
+                        width: 200px;
+                        height: 200px;
+                        padding: 0px 0px 0px 20px;
+
+                        & > h2 {
+                            margin-left: 15px;
+                            font-size: 1.7rem !important;
+                        }
+                        & > p {
+                            margin-left: 15px;
+                            margin-top: 10px;
+                        }
+                        & > h3 {
+                            margin-left: 15px;
+                        }
+                    }
+                }
+                & > .section__footText {
+                    border-top: 2px solid #3F3F3D;
+                    margin-top: 60px;
+    
+                    & > h1 {
+                        font-size: 1.8rem;
+                        margin-top: 25px;
+                    }
+                    & > h2 {
+                        font-size: 1.7rem;
+                    }
+                    & > h3 {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+        & > .footer {
+            width: 100%;
+            & > .foot__text {
+                font-size: 0.9rem;
+            }
+            & > .link {
+                a {
+                    font-size: 0.9rem;
+                }
+                & > .fa-brands {
+                    margin-left: 2px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .container-fluid {
+        width: 100%;
+
+        & > .main {
+            & > .header__wrapper {
+                & > .header__main {
+                    padding-bottom: 60px;
+
+                    & > .header__banner {
+                        & > button {
+                            font-size: 1rem;
+                            padding: 15px 15px;
+                        }
+                    }
+                }
+                & > .header__video {
+                    padding-bottom: 60px;
+
+                    & > video {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+        & > .section {
+            & > .section__main {
+                & > .section__one {
+                    & > h1 {
+                        margin: 0 25px;
+                        font-size: 1.6rem;
+                        text-align: center;
+                    }
+                    & > .sec__main {
+                        margin-left: 25px;
+
+                        & > .section__menu {
+                            & > p {
+                                width: 90%;
+                                font-size: 0.9rem;
+                            }                        
+                        }
+                    }
+                }
+                & > .section__two {
+                    & > img {
+                        width: 360px;
+                    }
+                }
+            }
+        }
+        & > .section__foot {
+            & > .sec__footCard {
+                padding: 60px 0;
+
+                & > .sec__card {
+                    & > .card {
+                        margin-bottom: 35px;
+                    }
+                }
+                & > .section__footText {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+    .container-fluid {
+        width: 100%;
+
+        & > .header {
+            width: 100%;
+
+            & > .row {
+                & > .col-6 {
+                    & > button {
+                        font-size: 0.8rem;
+
+                        & > h1 {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+        & > .main {
+            & > .header__wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                & > .header__main {
+                    padding-bottom: 50px;
+
+                    & > .header__banner {
+                        & > button {
+                            padding: 12px 15px;
+                            font-size: 1.2rem;
+                            margin-top: 25px;
+                        }
+                    }
+                    & > .header__footer {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                & > .header__video {
+                    padding-bottom: 40px;
+                }
+            }
+        }
+
+        & > .section {
+            & > .section__main {
+                & > .section__one {
+                    width: 100%;
+                    padding-bottom: 15px;
+                    
+                    & > .sec__main {
+                        display: flex; 
+                        justify-content: space-between;
+
+                        & > .section__menu {
+                            width: 70%;
+                            & > p {
+                                font-size: 0.9rem;
+                                font-weight: 100;
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+                & > .section__two {
+                    display: none;
+                }
+            }
+        }
+        & > .section__foot {
+            & > .sec__footCard {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 30px 0;
+                
+                & > .sec__card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 15px;
+
+                    & > .card {
+                        margin: 20px 0;
+                    }
+                    & > .card__active {
+                        margin: 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 499.98px) {
+    .container-fluid {
+        width: 100%;
+
+        & > .header {
+            width: 100%;
+
+            & > .row {
+                width: 98%;
+
+                & > .col-6 {
+                    padding: 0;
+
+                    & > button {
+                        padding: 12px 20px;
+                        font-size: 0.9rem;
+
+                        & > h1 {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+        & > .main {
+            width: 100%;
+
+            & > .header__wrapper {
+                display: flex;
+                flex-direction: column;
+                & > .header__main {
+                    padding-bottom: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    & > .header__banner {
+                        & > button {
+                            padding: 10px 15px;
+                            font-size: 1rem ;
+                            margin-top: 50px;
+                        }
+                    }
+                }
+                & > .header__video {
+                    padding-bottom: 15px;
+                }
+            }
+        }
+        & > .section {
+            // display: none;
+            & > .section__main {
+                & > .section__one {
+                    width: 100%;
+
+                    & > h1 {
+                        font-size: 1.4rem;
+                        margin-left: 0;
+                        margin-top: 10px;
+                        padding: 0 10px;
+                        text-align: center;
+                    }
+                    & > .sec__main {
+                        margin: 20px;
+                        display: flex; 
+                        justify-content: space-between;
+
+                        & > .section__menu{
+                            width: 70%;
+
+                            & > h2 {
+                                font-size: 1.2rem;
+                            }
+                            & > p {
+                                width: 90%;
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
+                & > .section__two {
+                    display: none;
+                }
+            }
+        }
+        & > .section__slayd {
+            & > .carousel {
+                height: 500px;
+                padding: 30px 0;
+
+                & > .carousel-inner {
+                    & > .carousel-item  {
+                        & > .flex-center {
+                            & > .carousel-caption {
+                                & > p {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .del_but {
+                    display: none;
+                }
+            }
+        }
+        & > .section__foot {
+            & > .sec__footCard {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 25px 0 ;
+
+                & > .sec__card {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    & > .card {
+                        margin: 20px 0;
+                    }
+                    & > .card__active {
+                        margin: 20px 0;
+                    }
+                }
+                & > .section__footText {
+                    margin: 25px 0;
+
+                    & > h1 {
+                        font-size: 1.5rem;
+                    }
+                    & > h2 {
+                        font-size: 1.3rem;
+                    }
+                    & > h3 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        & > .footer {
+            justify-content: space-evenly;
+
+            & > .link {
+                display: flex;
+                align-items: center;
+
+                & > a {
+                    margin-right: 25px;
+                    font-size: 1rem;
+                }
+            }
+            & > .foot__text{
+                & > p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container-fluid {
+        width: 100%;
+
+        & > .header {
+            width: 100%;
+
+            & > .row {
+                & > .col-6 {
+                    & > .logo {
+                        width: 80px;
+                        padding: 8px;
+                    }
+                    & > button {
+                        padding: 7px 8px;
+
+                        & > i{
+                            font-size: 0.6rem;
+                        }
+                        & > h1 {
+                            font-size: 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
+        & > .main {
+            & > .header__bannerIcon1 {
+                display: none;
+            }
+            & > .header__wrapper {
+                & > .header__main {
+                    & > .header__banner {
+                        & > button {
+                            font-size: 0.9rem;
+                            padding: 10px;
+                        }
+                    }
+                    & > .header__footer{
+                        & > .header__foot {
+                            & > p{
+                                text-align: center;
+                            }
+                            & > button {
+                                & > i {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                & > .header__video {
+                    & > video {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+        & > .section {
+            & > .section__main {
+                & > .section__one {
+                    & > .sec__main {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        & > .section__menu {
+                            margin-top: 15px;
+                            text-align: center;
+                            & > p {
+                                margin-top: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & > .section__slayd {
+            & > .carousel {
+                padding: 15px 0;
+
+                & > .carousel-inner {
+                    & > .carousel-item {
+                        & > .flex-center {
+                            & > img {
+                                width: 200px;
+                            }
+                            & > .carousel-caption {
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & > .section__foot {
+            & > .sec__footCard {
+                & > h1 {
+                    font-size: 1.4rem;
+                }
+                & > .sec__card {
+                    & > .card {
+                        height: 160px;
+                        padding: 10px 10px 10px 25px;
+
+                        & > h2 {
+                            font-size: 1.4rem !important;
+                        }
+                    }
+                }
+                & > .section__footText {
+                    text-align: center;
+                    
+                    & > h1 {
+                        font-size: 1.2rem;
+                    }
+                    & > h2 {
+                        font-size: 1rem;
+                    }
+                    & > h3 {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        & > .footer {
+            & > .foot__text {
+                & > p {
+                    font-size: 0.8rem;
+                }
+            }
+            & > .link {
+                & > a {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
